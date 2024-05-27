@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Menú Principal: Examen #2 Cesar Castaño A00830006</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='cesar.jpg') }}" alt="Descripción de la imagen" class="circular-image"/>
+    </div>
+    <div class="button-container">
+        <a href="{{ url_for('alta_alumno') }}" class="button">Dar de alta un nuevo alumno</a>
+        <a href="{{ url_for('alta_sistema') }}" class="button">Dar de alta un nuevo sistema</a>
+        <a href="{{ url_for('modificar_alumno') }}" class="button">Modificar un alumno</a>
+        <a href="{{ url_for('modificar_sistema') }}" class="button">Modificar un sistema</a>
+        <a href="{{ url_for('alta_practica') }}" class="button">Dar de alta una nueva práctica</a>
+        <a href="{{ url_for('listar') }}" class="button">Listar alumnos y sistemas por práctica</a>
+    </div>
+</body>
+</html>
